@@ -1,0 +1,5 @@
+verilog work "lw.v"
+verilog work "IM.v"
+verilog work "IFU.v"
+verilog work "ifu_tb.v"
+verilog work "H:/14.7/ISE_DS/ISE//verilog/src/glbl.v"
