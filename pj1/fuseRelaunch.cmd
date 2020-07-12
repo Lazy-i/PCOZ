@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "H:/ISE/pj1/spring_tb_isim_beh.exe" -prj "H:/ISE/pj1/spring_tb_beh.prj" "work.spring_tb" "work.glbl" 

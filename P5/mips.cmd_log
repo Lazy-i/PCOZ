@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "H:/ISE/P5/mips.xst" -ofn "H:/ISE/P5/mips.syr" 

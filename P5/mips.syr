@@ -1,0 +1,188 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.37 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.37 secs
+ 
+--> Reading design: mips.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mips.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mips"
+Output Format                      : NGC
+Target Device                      : xa3s50-4-vqg100
+
+---- Source Options
+Top Module Name                    : mips
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "TCODE.v" in library work
+ERROR:HDLCompilers:26 - "TCODE.v" line 32 expecting ')', found 'bgezal'
+ERROR:HDLCompilers:28 - "TCODE.v" line 95 'bgezal' has not been declared
+ERROR:HDLCompilers:26 - "TCODE.v" line 96 expecting '.', found '>='
+ERROR:HDLCompilers:26 - "TCODE.v" line 97 expecting '.', found '>='
+ERROR:HDLCompilers:26 - "TCODE.v" line 100 unexpected token: '||'
+ERROR:HDLCompilers:26 - "TCODE.v" line 100 unexpected token: 'subu'
+ERROR:HDLCompilers:26 - "TCODE.v" line 100 unexpected token: 'lui'
+ERROR:HDLCompilers:26 - "TCODE.v" line 100 unexpected token: 'ori'
+ERROR:HDLCompilers:28 - "TCODE.v" line 110 'bgezal' has not been declared
+Compiling verilog file "stalld.v" in library work
+ERROR:HDLCompilers:26 - "TCODE.v" line 121 expecting 'end', found 'endmodule'
+ERROR:HDLCompilers:26 - "stalld.v" line 21 unexpected token: '('
+Module <TCODE> compiled
+ERROR:HDLCompilers:26 - "stalld.v" line 22 expecting 'endmodule', found 'input'
+Compiling verilog file "STALL.v" in library work
+Compiling verilog file "SPI.v" in library work
+Module <STALL> compiled
+Compiling verilog file "MUXCL.v" in library work
+Module <SPI> compiled
+Compiling verilog file "IM.v" in library work
+Module <MUXCL> compiled
+Compiling verilog file "Forward.v" in library work
+Module <IM> compiled
+Compiling verilog file "BLINK.v" in library work
+Module <Forward> compiled
+Compiling verilog file "../CPU/OR.v" in library work
+Module <BLINK> compiled
+Compiling verilog file "../CPU/Ctrl.v" in library work
+Module <OR> compiled
+Compiling verilog file "../CPU/AND.v" in library work
+Module <Ctrl> compiled
+Compiling verilog file "Wreg.v" in library work
+Module <AND> compiled
+Compiling verilog file "PC.v" in library work
+Module <Wreg> compiled
+Compiling verilog file "NPC.v" in library work
+Module <PC> compiled
+Compiling verilog file "MUX_4_32.v" in library work
+Module <NPC> compiled
+Compiling verilog file "MUX_3_5.v" in library work
+Module <MUX_4_32> compiled
+Compiling verilog file "MUX_3_32.v" in library work
+Module <MUX_3_5> compiled
+Compiling verilog file "MUX_2_5.v" in library work
+Module <MUX_3_32> compiled
+Compiling verilog file "MUX_2_32.v" in library work
+Module <MUX_2_5> compiled
+Compiling verilog file "Mreg.v" in library work
+Module <MUX_2_32> compiled
+Compiling verilog file "IFU.v" in library work
+Module <Mreg> compiled
+Compiling verilog file "hazard.v" in library work
+Module <IFU> compiled
+Compiling verilog file "GRF.v" in library work
+Module <hazard> compiled
+Compiling verilog file "Feg.v" in library work
+Module <GRF> compiled
+Compiling verilog file "EXT.v" in library work
+Module <Dreg> compiled
+Compiling verilog file "Ereg.v" in library work
+Module <EXT> compiled
+Compiling verilog file "DM.v" in library work
+Module <Ereg> compiled
+Compiling verilog file "Contrler.v" in library work
+Module <DM> compiled
+Compiling verilog file "CMP.v" in library work
+Module <Contrler> compiled
+Compiling verilog file "ALU.v" in library work
+Module <CMP> compiled
+Compiling verilog file "mips.v" in library work
+Module <ALU> compiled
+Module <mips> compiled
+Analysis of file <"mips.prj"> failed.
+--> 
+
+Total memory usage is 4532592 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

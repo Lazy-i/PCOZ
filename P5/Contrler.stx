@@ -1,0 +1,55 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to H:/ISE/P5/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to H:/ISE/P5/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "TCODE.v" in library work
+ERROR:HDLCompilers:26 - "TCODE.v" line 32 expecting ')', found 'bgezal'
+ERROR:HDLCompilers:28 - "TCODE.v" line 95 'bgezal' has not been declared
+ERROR:HDLCompilers:26 - "TCODE.v" line 96 expecting '.', found '>='
+ERROR:HDLCompilers:26 - "TCODE.v" line 97 expecting '.', found '>='
+ERROR:HDLCompilers:26 - "TCODE.v" line 101 unexpected token: '||'
+ERROR:HDLCompilers:26 - "TCODE.v" line 101 unexpected token: 'subu'
+ERROR:HDLCompilers:26 - "TCODE.v" line 101 unexpected token: 'lui'
+ERROR:HDLCompilers:26 - "TCODE.v" line 101 unexpected token: 'ori'
+ERROR:HDLCompilers:28 - "TCODE.v" line 111 'bgezal' has not been declared
+Compiling verilog file "SPI.v" in library work
+ERROR:HDLCompilers:26 - "TCODE.v" line 122 expecting 'end', found 'endmodule'
+ERROR:HDLCompilers:26 - "SPI.v" line 21 unexpected token: '('
+Module <TCODE> compiled
+ERROR:HDLCompilers:26 - "SPI.v" line 22 expecting 'endmodule', found 'input'
+Compiling verilog file "MUXCL.v" in library work
+Compiling verilog file "BLINK.v" in library work
+Module <MUXCL> compiled
+Compiling verilog file "../CPU/OR.v" in library work
+Module <BLINK> compiled
+Compiling verilog file "../CPU/Ctrl.v" in library work
+Module <OR> compiled
+Compiling verilog file "../CPU/AND.v" in library work
+Module <Ctrl> compiled
+Compiling verilog file "Contrler.v" in library work
+Module <AND> compiled
+Module <Contrler> compiled
+Analysis of file <"Contrler.prj"> failed.
+--> 
+
+Total memory usage is 4505864 kilobytes
+
+Number of errors   :   12 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
