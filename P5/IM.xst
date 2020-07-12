@@ -1,5 +1,0 @@
-set -tmpdir "H:/ISE/P5/xst/projnav.tmp"
-set -xsthdpdir "H:/ISE/P5/xst"
-elaborate
--ifn IM.prj
--ifmt mixed

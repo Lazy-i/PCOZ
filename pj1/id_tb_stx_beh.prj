@@ -1,3 +1,0 @@
-verilog isim_temp "id_fsm.v"
-verilog isim_temp "id_tb.v"
-verilog isim_temp "H:/14.7/ISE_DS/ISE//verilog/src/glbl.v"

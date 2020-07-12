@@ -1,4 +1,0 @@
-verilog work "stalld.v"
-verilog work "STALL.v"
-verilog work "Forward.v"
-verilog work "hazard.v"

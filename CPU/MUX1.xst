@@ -1,5 +1,0 @@
-set -tmpdir "H:/ISE/CPU/xst/projnav.tmp"
-set -xsthdpdir "H:/ISE/CPU/xst"
-elaborate
--ifn MUX1.prj
--ifmt mixed
